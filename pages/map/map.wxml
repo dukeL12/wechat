@@ -1,0 +1,11 @@
+<!--pages/map/map.wxml-->
+<view>
+  <text>当前经纬度：</text>
+  <text>{{lat}}</text>
+  <text>，{{lon}}</text>
+</view>
+<view>
+  <text>到达当前经纬度+0.01</text>
+</view>
+<map latitude='{{lat}}'  longitude='{{lon}}' style='width:100%; height:400px'
+markers='{{markers}}' polyline='{{polyline}}' ></map>

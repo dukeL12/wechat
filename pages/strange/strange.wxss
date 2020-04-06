@@ -1,0 +1,23 @@
+/* pages/strange/strange.wxss */
+
+.gird{
+  float: left;
+  display: flex;
+  flex-direction: column;
+   margin: 40rpx 0 40rpx 30rpx; 
+}
+.gird-img{
+  height: 300rpx;
+  width: 320rpx
+}
+.gird-text{
+  margin-top: 10rpx
+}
+.section{
+   background:rgb(14, 235, 224);
+   margin:5rpx;
+   padding:20rpx;
+}
+.picker{
+  margin: auto 100rpx
+}

@@ -1,0 +1,51 @@
+/* pages/main/main.wxss */
+/* <轮播图> */
+swiper {
+  height: 450rpx;
+  width: 100%
+}
+.slide-image {
+  width: 95%;
+  margin-top: 10rpx;
+  margin-left: 18rpx;
+  border-radius: 20rpx;
+  height: 440rpx
+}
+
+.main{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px
+}
+.select1{
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  margin-left: 50rpx;
+  align-items: center
+
+}
+.sel-img{
+  height: 100rpx;
+  width: 100rpx;
+}
+.sel-text{
+  margin-top: 10px;
+  color: #666;
+  font-size: 34rpx
+}
+.six{
+  margin-top: 100px;
+  margin-left: 100px
+}
+.six-img{
+  height: 50px;
+  width: 50px;
+  vertical-align: middle
+}
+.six-text{
+ vertical-align: middle;
+ margin-left: 30rpx;
+}

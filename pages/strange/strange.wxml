@@ -1,0 +1,17 @@
+<!--pages/strange/strange.wxml-->
+<view class="section">
+  <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindDateChange">  
+    <view class="picker">  
+      请选择日期: {{dates}}  
+    </view>  
+  </picker>  
+</view>  
+
+<scroll-view scroll-y='true' bindscrolltolower='onScrollower'>
+  <block wx:for='{{list}}' wx:key=''>
+    <view class="gird" bindtap="previewImage" data-id='{{item.id}}'>
+      <image src="{{item.img}}" class="gird-img"></image>
+      <text class="gird-text">{{item.time}}</text>
+    </view>
+  </block>
+</scroll-view>

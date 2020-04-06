@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<!--pages/getinto.wxml-->
+<view class='container'>
+  <view class="login-icon">
+  <image class='login-img' src='/images/11.jpg'></image>
+  </view>
+  <view class='login-from'>
+    <view class="inputView">
+        <image class='namelmage' src='/images/12.png'></image>
+        <label class='loginLab'>账号</label>
+        <input class='inputText' bindinput='inputName' placeholder='请输入学号' name='username' type='text'/>
+      <view class='line'></view>
+      <view class="inputView">
+        <image class='keylmage' src='/images/12.png'></image>
+        <label class='loginLab'>密码</label>
+        <input class='inputText'password="true" bindinput='inputPwd' placeholder='请输入密码' name='passwd'/>
+      </view>
+    </view>
+    <view class="login">
+      <button class='loginbtn' type='primary ' size='{{primarysize }}'loading='{{loading}}' plain="{{plain}}"bindtap="log">登录</button>
+      <!-- <view class='info'>{{username}}</view> -->
+    </view>
+  </view>
+</view>

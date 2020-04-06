@@ -1,0 +1,69 @@
+/* pages/movie/movie.wxss */
+.sel-img{
+  height: 150rpx;
+  width: 150rpx;
+  /* margin-top: 240px;
+  margin-left: 260px */
+}
+.sel-text{
+  height: 40px;
+  width: 100%;
+  margin-left: 150px
+}
+.sel-text2{
+  margin-top: 20px
+}
+.main{
+  height: 235px;
+  width: 100%;
+  /* display: flex;
+  flex-direction: row;
+  margin-top: 220px */
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.title {
+  font-size: 30rpx;
+}
+.imgs {
+  width: 670rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.img1 {
+  width: 220rpx;
+  height: 150rpx;
+}
+.img2 {
+  width: 220rpx;
+  height: 150rpx;
+  margin-left: 5rpx;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15rpx;
+}
+.bottom-name {
+  font-size: 25rpx;
+  color: #ccc;
+}
+.bottom-comment {
+  font-size: 25rpx;
+  color: #ccc;
+  margin-left: 20rpx;
+}

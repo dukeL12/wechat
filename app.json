@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/map/map",
+    "pages/movie/movie",
+    "pages/weather/weather",
+    "pages/Statistics/Statistic"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_s.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "/images/map.png",
+        "selectedIconPath": "/images/map_s.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "校园",
+        "iconPath": "/images/movie1.png",
+        "selectedIconPath": "/images/movie2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

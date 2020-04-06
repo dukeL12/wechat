@@ -1,0 +1,23 @@
+<!-- 教育背景 -->
+<view class='education'>
+  <view class='header'>
+    <image class='h-img' src='/images/c1.jpg'></image>
+  </view>
+  <view class='info'>{{result}}</view>
+  <view class='main'>
+      <view class='title'>教育背景：</view>
+      <view class='school m-view'>毕业院校：徽商职业学院</view>
+      <view class='m-view'>最高学历：	专科</view>
+      <view class='m-view'>毕业日期：	2017-06-01</view>
+      <view class='m-view'>所学专业：	软件技术</view>
+      <view class='m-view'>外语：	英语　一般</view>
+      <view class='m-view'>自我评价：
+        <text>
+              性格沉稳，对工作认真负责，纪律性和适应性强。
+          有2年工作经验，熟悉掌握html+css，Vue.js,小程序,JavaScript，jquery，bootstrap，css3 ，ajax。
+          使用过php，sql server 数据库，php做过后台开发程序，也使用过wampserver，此外，还了解过Angular JS和git。
+        </text>
+        
+      </view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<!--pages/main/main.wxml-->
+<!-- <轮播图> -->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorcolor}}" indicator-active-color="{{indicatoractivecolor}}" circular="{{circular}}">
+    <block wx:for="{{imgUrls}}" wx:key=''>
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 选项 -->
+<view class="main">
+  <view class="select1" bindtap="renlianshibie">
+    <image src="/images/3.png" class="sel-img"></image>
+    <text class="sel-text">人脸识别</text>
+  </view>
+  <view class="select1" bindtap="kaoqin">
+    <image src="/images/4.png" class="sel-img"></image>
+    <text class="sel-text">考勤统计</text>
+  </view>
+  <view class="select1" bindtap="luru">
+    <image src="/images/5.png" class="sel-img"></image>
+    <text class="sel-text">人脸录入</text>
+  </view>
+  <view class="select1" bindtap="mosheng">
+    <image src="/images/6.png" class="sel-img"></image>
+    <text class="sel-text">陌生访客</text>
+  </view>
+    <view>
+    
+    <!-- <view class='info'>{{username}}</view> -->
+  </view>
+</view>
+
+<view class="six">
+<image src="/images/8.png" class="six-img"></image>
+<text class="six-text">六贵族团队出品</text>
+</view>
