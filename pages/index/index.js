@@ -41,20 +41,30 @@ Page({
           //转成json字符串
           var r = res.data
           var citystr = JSON.stringify(r)
+          wx.setStorageSync('username', this.data.username)
 
           //转成json对象
           var cityjson = JSON.parse(citystr);
           wx.setStorageSync('studentdata', res.data.stud)
+          wx.setStorageSync('playcard', res.data.playcard)
+          wx.setStorageSync('result5', res.data.result5)
           this.setData({
-            result: res.data,	//服务器返回的结果
+            result: res.data.stud,	//服务器返回的结果
           })
-          wx.redirectTo({
-            url: '../main/main'
-          })
+          if (res.data.type=="学生"){
+            wx.redirectTo({
+              url: '../main/main'
+            })
+          }
+          else {
+            wx.redirectTo({
+              url: '../main2/main2'
+            })
+          }
           // var str = res.data.stud
           // var obj = new Function('return ' + str)();
           // console.log(obj.name);
-          console.log(typeof (res.data.stud))
+          console.log(res.data.result5)
         }
       }
       

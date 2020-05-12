@@ -1,5 +1,5 @@
-/* pages/main/main.wxss */
-/* <轮播图> */
+/* pages/main2/main2.wxss */
+
 swiper {
   height: 450rpx;
   width: 100%

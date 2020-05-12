@@ -1,17 +1,11 @@
-// pages/Statistics/Statistic.js
+// pages/banjikaoqin/banjikaoqin.js
 Page({
-
 
   /**
    * 页面的初始数据
    */
   data: {
-    studentdata:[],
-    list: [],
-    playcard:[],
-    username:"",
-    result:[]
-
+    banji:0
 
   },
 
@@ -19,30 +13,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var studentdata = wx.getStorageSync('studentdata')
-    var playcard = wx.getStorageSync('playcard')
-    var username = wx.getStorageSync('username')
+    var banji = wx.getStorageSync('banji')
     wx.request({
-      url: 'http://127.0.0.1:8000/find_student_playcard/',	//获取服务器地址，此处为本地地址
+      url: 'http://127.0.0.1:8000/find_banji_playcard/',	//获取服务器地址，此处为本地地址
       header: {
         "content-type": "application/x-www-form-urlencoded"		//使用POST方法要带上这个header
       },
       method: "POST",
       data: {		//向服务器发送的信息
-        username: username,
+        banji: banji,
       },
       success: res => {
-        console.log(username)
         if (res.statusCode == 200) {
-          //转成json字符串
-          // var r = res.data
-          // var citystr = JSON.stringify(r)
-          // wx.setStorageSync('username', this.data.username)
 
-          // //转成json对象
-          // var cityjson = JSON.parse(citystr);
-          // wx.setStorageSync('studentdata', res.data.stud)
-          // wx.setStorageSync('playcard', res.data.playcard)
           this.setData({
             result: res.data.playcard,	//服务器返回的结果
           })
@@ -53,13 +36,6 @@ Page({
 
 
     })
-
-  // this.setData({
-  //   playcard: playcard,
-  //   studentdata: studentdata
-  //     // list: cityjson
-  //   })
-  //   console.log(typeof(studentdata))
   },
 
   /**

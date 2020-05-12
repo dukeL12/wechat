@@ -1,4 +1,4 @@
-// pages/main/main.js
+// pages/main2/main2.js
 Page({
   /**
    * 页面的初始数据
@@ -8,7 +8,7 @@ Page({
       '/images/1.jpg',
       '/images/2.jpg',
     ],
-    username: '',
+    result5:[],
     indicatorDots: true,
     autoplay: true,
     interval: 2000,
@@ -19,28 +19,31 @@ Page({
   },
 
   onLoad: function (options) {
-    var username = wx.getStorageSync('username')
+    var result5 = wx.getStorageSync('result5')
     this.setData({
-      username: username
+      result5: result5
     })
-    console.log(username)
+    console.log(result5)
   },
 
-  renlianshibie:function(){
+  banjikaoqin: function (event) {
+    wx.setStorageSync('banji', event.currentTarget.dataset.s)
+    console.log(event.currentTarget.dataset.s)
     wx.navigateTo({
-      url: '../test/index',
+      url: '../banjikaoqin/banjikaoqin',
     })
+
   },
   kaoqin: function () {
     wx.navigateTo({
       url: '../Statistics/Statistic',
     })
-  }, 
-  jinrikaoqin: function() {
+  },
+  jinrikaoqin: function () {
     wx.navigateTo({
       url: '../Calendar/Calendar',
     })
-  }, 
+  },
   luru: function () {
     wx.navigateTo({
       url: '../Input/Input',

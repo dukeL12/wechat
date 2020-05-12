@@ -1,31 +1,7 @@
-<!--pages/Statistics/Statistic.wxml-->
-
-
-<!-- <view wx:for="{{[studentdata]}}" wx:key='id'>
-  <text>{{item.sno}}</text>
-  <text>{{item.sname}}</text>
-  <text>{{item.cno}}</text>
-
-</view> -->
-
-<!-- <view wx:for="{{JSON}}" wx:key="list">
-
-  <view>{{item}}</view>
-  <text>{{studentdata.sname}}</text>
-  <text>{{studentdata.cno}}</text>
-</view> -->
-<!-- <view wx:for="{{studentdata}}" wx:key='sno'>
-
-  <view>{{item.sno}}</view>
-  <view>{{item.sname}}</view>
-  <view>{{item.cno}}</view>
-  
-
-</view> -->
-
-<!--pages/Statistics/Statistic.wxml-->
+<!--pages/banjikaoqin/banjikaoqin.wxml-->
 <view class="table">
   <view class="tr bg-w">
+  <view class="th ">学生号</view>
     <view class="th">课程号</view>
     <view class="th">时间</view>
     <view class="th ">状态</view>
@@ -33,12 +9,14 @@
   </view>
   <block wx:for="{{result}}" wx:key="{{code}}">
     <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+    <view class="td">{{item.student_number}}</view>
       <view class="td">{{item.playcard_id}}</view>
       <view class="td">{{item.playcard_time}}</view>
       <view class="td">{{item.playcard_type}}</view>
       <!-- <view class="td">{{item.type}}</view> -->
     </view>
         <view class="tr" wx:else>
+        <view class="td">{{item.student_number}}</view>
       <view class="td">{{item.playcard_id}}</view>
       <view class="td">{{item.playcard_time}}</view>
       <view class="td">{{item.playcard_type}}</view>

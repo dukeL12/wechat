@@ -3,9 +3,14 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/map/map",
+    "pages/main/main",
     "pages/movie/movie",
     "pages/weather/weather",
-    "pages/Statistics/Statistic"
+    "pages/Statistics/Statistic",
+    "pages/Calendar/Calendar",
+    "pages/PlayCard/PlayCard",
+    "pages/main2/main2",
+    "pages/banjikaoqin/banjikaoqin"
   ],
   "permission": {
     "scope.userLocation": {
@@ -15,7 +20,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "考勤系统",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

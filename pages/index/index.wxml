@@ -17,7 +17,7 @@
   <image class='login-img' src='/images/11.jpg'></image>
   </view>
   <view class='login-from'>
-    <view class="inputView">
+    <view class="inputView">    
         <image class='namelmage' src='/images/12.png'></image>
         <label class='loginLab'>账号</label>
         <input class='inputText' bindinput='inputName' placeholder='请输入学号' name='username' type='text'/>
@@ -27,6 +27,8 @@
         <label class='loginLab'>密码</label>
         <input class='inputText'password="true" bindinput='inputPwd' placeholder='请输入密码' name='passwd'/>
       </view>
+
+
     </view>
     <view class="login">
       <button class='loginbtn' type='primary ' size='{{primarysize }}'loading='{{loading}}' plain="{{plain}}"bindtap="log">登录</button>

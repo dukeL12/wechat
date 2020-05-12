@@ -1,2 +1,6 @@
-<!--pages/weather/weather.wxml-->
-<text>pages/weather/weather.wxml</text>
+<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+<button type="primary" bindtap="takePhoto">识别签到</button>
+<view>预览</view>
+<view class='info'>{{result}}</view>
+<image mode="widthFix" src="{{src}}"></image>
+<!-- <view class='info'>{{course}}</view> -->

@@ -1,0 +1,61 @@
+<!--pages/PlayCard/PlayCard.wxml-->
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">课程</view>
+    <view class="th">时间</view>
+    <!-- <view class="th ">状态</view> -->
+
+    <view class="th ">操作</view>
+  </view>
+  <block wx:for="{{courseforme}}" wx:key="{{code}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.course_name}}</view>
+      <view class="td">{{item.detail_time}}</view>
+      <!-- <view class="td">{{item.course_student_type}}</view> -->
+      <!-- <view wx:if="{{in_day == cur_day && in_month==cur_month && in_year==cur_year}}"> -->
+
+        <view wx:if="{{in_day == cur_day && in_month==cur_month && in_year==cur_year}}" data-id="{{item.course_number}}" bindtap="renlianshibie" class="td">签到</view>
+      <!-- </view> -->
+      <view wx:else>
+          <view>无法签到</view>
+      </view>
+    </view>
+        <view class="tr" wx:else>
+      <view class="td">{{item.course_name}}</view>
+      <view class="td">{{item.detail_time}}</view>
+      <!-- <view class="td">{{item.course_student_type}}</view> -->
+
+      <view wx:if="{{in_day == cur_day && in_month==cur_month && in_year==cur_year}}" data-id="{{item.course_number}}" bindtap="renlianshibie" class="td">签到</view>
+      <!-- </view> -->
+      <view wx:else>
+          <view>无法签到</view>
+      </view>
+    </view>
+  </block>
+  <!-- <block wx:for="{{studentdata}}" wx:key="{{code}}"> -->
+    <!-- <view class="tr bg-g" >
+      <view class="td">大学语文</view>
+      <view class="td">9.30~10.30</view>
+      <view class="td">d栋301</view>
+      <view class="td" bindtap="renlianshibie">签到</view>
+    </view>
+    <view class="tr" >
+      <view class="td">大学物理</view>
+      <view class="td">11.30~12.30</view>
+      <view class="td">d栋302</view>
+      <view class="td">签到</view>
+    </view>
+    <view class="tr bg-g" >
+      <view class="td">计算机组成</view>
+      <view class="td">14.30~15.30</view>
+      <view class="td">d栋301</view>
+      <view class="td">签到</view>
+    </view>
+    <view class="tr" >
+      <view class="td">java</view>
+      <view class="td">16.30~17.30</view>
+      <view class="td">d栋302</view>
+      <view class="td">签到</view>
+    </view> -->
+  <!-- </block> -->
+</view>

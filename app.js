@@ -6,6 +6,13 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    // var that = this;
+    // wx.getSystemInfo({
+    //   success(res) {
+    //     that.globalData.statusBarHeight = res.statusBarHeight;
+    //     console.log(res.statusBarHeight, 'statusBarHeight')
+    //   }
+    // })
 
     // 登录
     wx.login({

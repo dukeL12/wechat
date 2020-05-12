@@ -1,3 +1,4 @@
+<!--pages/main2/main2.wxml-->
 <!--pages/main/main.wxml-->
 <!-- <轮播图> -->
 <view>
@@ -12,26 +13,12 @@
 
 <!-- 选项 -->
 <view class="main">
-  <view class="select1" bindtap="jinrikaoqin">
-    <image src="/images/7.png" class="sel-img"></image>
-    <text class="sel-text">今日考勤</text>
-  </view>
-  <view class="select1" bindtap="renlianshibie">
-    <image src="/images/3.png" class="sel-img"></image>
-    <text class="sel-text">人脸识别</text>
-  </view>
-  <view class="select1" bindtap="kaoqin">
-    <image src="/images/4.png" class="sel-img"></image>
-    <text class="sel-text">考勤统计</text>
-  </view>
-  <view class="select1" bindtap="luru">
+<block wx:for="{{result5}}" wx:key="{{code}}">
+  <view class="select1" data-s="{{item.class_number}}" bindtap="banjikaoqin">
     <image src="/images/5.png" class="sel-img"></image>
-    <text class="sel-text">人脸录入</text>
+    <text class="sel-text">{{item.class_number}}班</text>
   </view>
-  <view class="select1" bindtap="mosheng">
-    <image src="/images/6.png" class="sel-img"></image>
-    <text class="sel-text">陌生访客</text>
-  </view>
+</block>
   
     <view>
     
